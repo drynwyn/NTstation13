@@ -396,8 +396,11 @@
 	..()
 
 /mob/living/simple_animal/hostile/asteroid/goliath/Die()
-	var/obj/item/asteroid/goliath_hide/G = new /obj/item/asteroid/goliath_hide(src.loc)
+	var /obj/structure/closet/goliath/Q = new /obj/structure/closet/goliath(src.loc)
+	Q.layer = 4.1
+	var /obj/item/asteroid/goliath_hide/G = new /obj/item/asteroid/goliath_hide(src.loc)
 	G.layer = 4.1
+	qdel(src)
 	..()
 
 /obj/item/asteroid/goliath_hide
