@@ -16,7 +16,19 @@
 		viewers(user) << "<span class='suicide'>[user] is strangling \himself with the [src.name]! It looks like \he's trying to commit suicide.</span>"
 		return (OXYLOSS)
 
-
+/obj/item/weapon/melee/carp_tamer
+	name = "carp befriending stick"
+	desc = "A highly advanced pheromone-coated stick that can be used to befriend Space Carp. Maybe."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "baton"
+	item_state = "carp_tamer"
+	force = 0
+	
+	/obj/item/weapon/melee/carp_tamer/afterattack(atom/target, mob/user, proximity_flag)
+		if(istype(target, /mob/living/simple_animal/hostile/carp))
+			var/mob/living/simple_animal/hostile/carp/M = target
+			M.friends += user
+		return
 
 /obj/item/weapon/melee/classic_baton
 	name = "police baton"
