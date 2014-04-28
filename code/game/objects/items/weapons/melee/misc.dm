@@ -21,7 +21,7 @@
 	desc = "A highly advanced pheromone-coated stick that can be used to befriend Space Carp. Maybe."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "baton"
-	item_state = "carp_tamer"
+	item_state = "classic_baton"
 	force = 0
 	
 /obj/item/weapon/melee/carp_tamer/afterattack(atom/target, mob/user, proximity_flag)
