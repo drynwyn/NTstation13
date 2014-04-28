@@ -1877,6 +1877,15 @@ datum/design/welding_mask
 	build_type = PROTOLATHE
 	materials = list("$metal" = 4000, "$glass" = 2000)
 	build_path = /obj/item/clothing/mask/gas/welding
+	
+datum/design/carp_tamer
+	name = "Carp Befriending Stick"
+	desc = "A highly advanced pheromone-coated stick that can be used to befriend Space Carp. Maybe."
+	id = "carp_tamer"
+	req_tech = list("biotech" = 4, "materials" = 4)
+	build_type = PROTOLATHE
+	materials = list("$metal" = 3000, "carpotoxin" = 10)
+	build_path = obj/item/weapon/melee/carp_tamer
 
 datum/design/mesons
 	name = "Optical Meson Scanners"
