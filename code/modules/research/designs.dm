@@ -1885,7 +1885,7 @@ datum/design/carp_tamer
 	req_tech = list("biotech" = 4, "materials" = 4)
 	build_type = PROTOLATHE
 	materials = list("$metal" = 3000, "carpotoxin" = 10)
-	build_path = obj/item/weapon/melee/carp_tamer
+	build_path = /obj/item/weapon/melee/carp_tamer
 
 datum/design/mesons
 	name = "Optical Meson Scanners"
