@@ -28,6 +28,7 @@
 		if(istype(target, /mob/living/simple_animal/hostile/carp))
 			var/mob/living/simple_animal/hostile/carp/M = target
 			M.friends += user
+			user.visible_message("<span class='notice'>[user] smacks the Space Carp in the snout to establish superiority.</span>")
 		return
 
 /obj/item/weapon/melee/classic_baton
