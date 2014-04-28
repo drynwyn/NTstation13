@@ -25,9 +25,10 @@
 	force = 0
 	
 	/obj/item/weapon/melee/carp_tamer/afterattack(atom/target, mob/user, proximity_flag)
-		if(istype(target, /mob/living/simple_animal/hostile/carp))
+		if(istype(target, /mob/living/simple_animal/hostile/carp) && proximity_flag)
 			var/mob/living/simple_animal/hostile/carp/M = target
 			M.friends += user
+			log_game("[user] has befriended a space carp with a carp tamer.")
 			user.visible_message("<span class='notice'>[user] smacks the Space Carp in the snout to establish superiority.</span>")
 		return
 
