@@ -46,7 +46,7 @@
 	
 /obj/item/clothing/suit/ventcrawl/dropped(mob/user)
 	if(!istype(get_item_by_slot(slot_wear_suit),/obj/item/clothing/suit/ventcrawl)//Prevents you from losing ventcrawl if you pick up a suit and drop it while wearing another
-		user.ventcrawler = 2
+		user.ventcrawler = 0
 	else
 		return
 
