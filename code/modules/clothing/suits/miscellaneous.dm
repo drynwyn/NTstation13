@@ -35,6 +35,20 @@
 	icon_state = "pirate"
 	item_state = "pirate"
 
+/obj/item/clothing/suit/ventcrawl
+	name = "zero-friction suit"
+	desc = "A suit that has absolutely no friction whatsoever. Bet you could fit into some tight spaces with this..."
+	icon_state = "justice"
+	item_state = "justice"
+	
+/obj/item/clothing/suit/ventcrawl/equipped(mob/living/carbon/human/user, slot_wear_suit)
+	user.ventcrawler = 2
+	
+/obj/item/clothing/suit/ventcrawl/dropped(mob/user)
+	if(!istype(get_item_by_slot(slot_wear_suit),/obj/item/clothing/suit/ventcrawl)//Prevents you from losing ventcrawl if you pick up a suit and drop it while wearing another
+		user.ventcrawler = 2
+	else
+		return
 
 /obj/item/clothing/suit/hgpirate
 	name = "pirate captain coat"
