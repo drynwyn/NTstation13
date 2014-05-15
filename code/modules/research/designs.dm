@@ -1939,3 +1939,11 @@ datum/design/magboots
 	build_type = PROTOLATHE
 	materials = list("$metal" = 4500, "$silver" = 1500, "$gold" = 2500)
 	build_path = /obj/item/clothing/shoes/magboots
+	
+datum/design/slideysuit
+	name = "Zero-friction suit"
+	desc = "A suit that will let you crawl through the vents."
+	req_tech = list("materials" = 4, "engineering" = 4)
+	build_type = PROTOLATHE
+	materials = list("$metal" = 2000, "lube" = 50)
+	build_path = /obj/item/clothing/suit/ventcrawl
