@@ -43,12 +43,12 @@
 	
 /obj/item/clothing/suit/ventcrawl/equipped(mob/living/carbon/human/user, slot_wear_suit)
 	user.ventcrawler = 2
+	return
 	
-/obj/item/clothing/suit/ventcrawl/dropped(mob/user)
+/obj/item/clothing/suit/ventcrawl/dropped(mob/living/carbon/human/user)//Uses full human path so that monkeys don't lose ventcrawling when they pick these up and set them down.
 	if(!istype(get_item_by_slot(slot_wear_suit),/obj/item/clothing/suit/ventcrawl)//Prevents you from losing ventcrawl if you pick up a suit and drop it while wearing another
 		user.ventcrawler = 0
-	else
-		return
+	return
 
 /obj/item/clothing/suit/hgpirate
 	name = "pirate captain coat"
