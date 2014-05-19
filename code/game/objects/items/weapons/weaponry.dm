@@ -77,6 +77,7 @@
 	desc = "Woefully underpowered in D20"
 	icon_state = "katana"
 	item_state = "katana"
+	value = 6000
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
 	force = 40
