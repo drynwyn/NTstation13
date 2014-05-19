@@ -15,6 +15,7 @@
 	name = "camera bug"
 	desc = "For illicit snooping through the camera network."
 	icon = 'icons/obj/device.dmi'
+	value = 2500
 	icon_state	= "camera_bug"
 	w_class		= 1.0
 	item_state	= "camera_bug"
