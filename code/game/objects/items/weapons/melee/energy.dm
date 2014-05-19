@@ -54,6 +54,7 @@
 	hitsound = "swing_hit" //it starts deactivated
 	throw_speed = 3
 	throw_range = 5
+	value = 5000
 	w_class = 2.0
 	flags = NOSHIELD
 	origin_tech = "magnets=3;syndicate=4"
