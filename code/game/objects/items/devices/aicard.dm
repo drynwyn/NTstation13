@@ -5,6 +5,7 @@
 	item_state = "electronic"
 	w_class = 2.0
 	slot_flags = SLOT_BELT
+	value = 2500
 	var/flush = null
 	origin_tech = "programming=4;materials=4"
 
