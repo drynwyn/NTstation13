@@ -117,6 +117,7 @@
 		user.drop_item()
 		W.loc = src
 		src.l_leg = W
+		value += 30
 		src.updateicon()
 
 	if(istype(W, /obj/item/robot_parts/r_leg))
@@ -124,6 +125,7 @@
 		user.drop_item()
 		W.loc = src
 		src.r_leg = W
+		value += 30
 		src.updateicon()
 
 	if(istype(W, /obj/item/robot_parts/l_arm))
@@ -131,6 +133,7 @@
 		user.drop_item()
 		W.loc = src
 		src.l_arm = W
+		value += 30
 		src.updateicon()
 
 	if(istype(W, /obj/item/robot_parts/r_arm))
@@ -138,6 +141,7 @@
 		user.drop_item()
 		W.loc = src
 		src.r_arm = W
+		value += 30
 		src.updateicon()
 
 	if(istype(W, /obj/item/robot_parts/chest))
@@ -146,6 +150,7 @@
 			user.drop_item()
 			W.loc = src
 			src.chest = W
+			value += 50
 			src.updateicon()
 		else if(!W:wires)
 			user << "\blue You need to attach wires to it first!"
@@ -158,6 +163,7 @@
 			user.drop_item()
 			W.loc = src
 			src.head = W
+			value += 40
 			src.updateicon()
 		else
 			user << "\blue You need to attach a flash to it first!"
