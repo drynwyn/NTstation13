@@ -8,6 +8,7 @@
 	force_unwielded = 5
 	force_wielded = 20
 	throwforce = 15
+	value = 100000
 	throw_range = 1
 	w_class = 5
 	var/charged = 5
