@@ -13,6 +13,7 @@
 	name = "energy axe"
 	desc = "An energised battle axe."
 	icon_state = "axe0"
+	value = 5000
 	force = 40.0
 	throwforce = 25.0
 	hitsound = 'sound/weapons/bladeslice.ogg'
