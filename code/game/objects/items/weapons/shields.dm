@@ -12,6 +12,7 @@
 	throw_speed = 2
 	throw_range = 4
 	w_class = 4.0
+	value = 70
 	g_amt = 7500
 	m_amt = 1000
 	origin_tech = "materials=2"
@@ -32,6 +33,7 @@
 
 /obj/item/weapon/shield/riot/roman
 	name = "roman shield"
+	value = 0
 	desc = "Bears an inscription on the inside: <i>\"Romanes venio domus\"</i>."
 	icon_state = "roman_shield"
 	item_state = "roman_shield"
@@ -41,6 +43,7 @@
 	desc = "A shield capable of stopping most projectile and melee attacks. Energy projectiles are reflected. It can be retracted, expanded, and stored anywhere."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "eshield0" // eshield1 for expanded
+	value = 2000
 	force = 3.0
 	throwforce = 5.0
 	throw_speed = 2
