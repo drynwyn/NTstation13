@@ -3,6 +3,7 @@
 	desc = "A scroll for moving around."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "scroll"
+	value = 10000
 	var/uses = 4.0
 	w_class = 2.0
 	item_state = "paper"
